@@ -1,10 +1,10 @@
 def calcX(filename: str) -> int:
+    mx14 = 0
+    mx2 = 0
+    mx7 = 0
+    mx = 0
     with open(filename) as file:
         file.readline()
-        mx14 = 0
-        mx2 = 0
-        mx7 = 0
-        mx = 0
         for line in file:
             n = int(line)
             if n % 14 == 0:

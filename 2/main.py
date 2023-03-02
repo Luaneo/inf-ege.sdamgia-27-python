@@ -1,8 +1,8 @@
 def calcMinSum(filename: str) -> int:
+    summa = 0
+    min_diff = float('inf')
     with open(filename) as file:
         file.readline()
-        summa = 0
-        min_diff = float('inf')
         for line in file:
             a, b = map(int, line.split())
             summa += min(a, b)

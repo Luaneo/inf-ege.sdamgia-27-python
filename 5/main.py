@@ -1,10 +1,10 @@
 def countPairs(filename: str) -> int:
+    count26 = 0
+    count13 = 0
+    count2 = 0
+    count_ = 0
     with open(filename) as file:
         file.readline()
-        count26 = 0
-        count13 = 0
-        count2 = 0
-        count_ = 0
         for line in file:
             n = int(line)
             if n % 26 == 0:

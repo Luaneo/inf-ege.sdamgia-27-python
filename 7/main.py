@@ -1,10 +1,10 @@
 def maxPair(filename: str) -> tuple[int, int]:
+    even17 = 0
+    odd17 = 0
+    even_ = 0
+    odd_ = 0
     with open(filename) as file:
         file.readline()
-        even17 = 0
-        odd17 = 0
-        even_ = 0
-        odd_ = 0
         for line in file:
             n = int(line)
             if n % 17 == 0:
